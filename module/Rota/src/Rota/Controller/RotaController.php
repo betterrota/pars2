@@ -1,8 +1,24 @@
-<html>
-  <head>
-     <title>PHP Test</title>
-  </head>
-  <body>
-     <?php echo '<p>Hello World</p>'; ?>
-  </body>
-</html>
+<?php
+namespace Rota\Controller;
+
+use Zend\Mvc\Controller\AbstractActionController;
+use Zend\View\Model\ViewModel;
+
+class RotaController extends AbstractActionController
+{
+    public function indexAction()
+    {
+    }
+
+    public function addAction()
+    {
+    }
+
+    public function editAction()
+    {
+    }
+
+    public function deleteAction()
+    {
+    }
+}
