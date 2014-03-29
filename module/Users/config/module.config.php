@@ -2,7 +2,7 @@
 return array(
     'controllers' => array(
         'invokables' => array(
-            'Users\Controller\User' => 'Users\Controller\UserController',
+            'Users\Controller\Users' => 'Users\Controller\UserController',
         ),
     ),
     
