@@ -18,7 +18,7 @@ return array(
                     ),
                     'defaults' => array(
                         'controller' => 'User\Controller\User',
-                        'action'     => 'user',
+                        'action'     => 'index',
                     ),
                 ),
             ),
