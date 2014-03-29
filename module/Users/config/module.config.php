@@ -2,7 +2,7 @@
 return array(
     'controllers' => array(
         'invokables' => array(
-            'Users\Controller\user' => 'Users\Controller\UserController',
+            'Users\Controller\User' => 'Users\Controller\UserController',
         ),
     ),
     'view_manager' => array(
