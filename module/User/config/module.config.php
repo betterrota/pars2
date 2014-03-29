@@ -3,6 +3,8 @@ return array(
     'controllers' => array(
         'invokables' => array(
             'User\Controller\User' => 'User\Controller\UserController',
+       'User\Controller\Register' =>'Uses\Controller\RegisterController',
+
         ),
     ),
     // The following section is new and should be added to your file
