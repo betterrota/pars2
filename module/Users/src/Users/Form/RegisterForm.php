@@ -39,7 +39,7 @@ array('name' => 'StringTrim'),
 array(
 'name' => 'EmailAddress',
 'options' => array(
-'messages' => array(\Zend\Validator\EmailAddress::INVALID_FORMAT => 'Email address format isinvalid'
+'messages' => array(\Zend\Validator\EmailAddress::INVALID_FORMAT => 'Email address format is invalid'
 )
 )
 )
