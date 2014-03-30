@@ -1,24 +1,14 @@
 <?php
-namespace Users;
+return array(
+    'controllers' => array(
+        'invokables' => array(
+           'Users\Controller\Index' =>'Users\Controller\IndexController',
 
-class Module
-{
-    public function getAutoloaderConfig()
-    {
-        return array(
-            'Zend\Loader\ClassMapAutoloader' => array(
-                __DIR__ . '/autoload_classmap.php',
-            ),
-            'Zend\Loader\StandardAutoloader' => array(
-                'namespaces' => array(
-                    __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
-                ),
-            ),
-        );
-    }
-
-    public function getConfig()
-    {
-        return include __DIR__ . '/config/module.config.php';
-    }
-}
+        ),
+    ),
+    'view_manager' => array(
+        'template_path_stack' => array(
+            'users' => __DIR__ . '/../view',
+        ),
+    ),
+);
