@@ -1,47 +1,24 @@
 <?php
-return array(
-    'controllers' => array(
-        'invokables' => array(
-           'Users\Controller\Index' =>'Users\Controller\IndexController',
+namespace Users;
 
-        ),
-    ),
-    'router' => array(
-'routes' => array(
-'users' => array(
-'type' => 'Literal',
-'options' => array(
-'route' => '/users',
-'defaults' => array(
-'__NAMESPACE__' =>'Users\Controller',
-'controller' => 'Index',
-'action' => 'index',
-,
-),
-'may_terminate' => true,
-'child_routes' => array(
+class Module
+{
+    public function getAutoloaderConfig()
+    {
+        return array(
+            'Zend\Loader\ClassMapAutoloader' => array(
+                __DIR__ . '/autoload_classmap.php',
+            ),
+            'Zend\Loader\StandardAutoloader' => array(
+                'namespaces' => array(
+                    __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
+                ),
+            ),
+        );
+    }
 
-'default' => array(
-'type' => 'Segment',
-'options' => array(
-'route' =>'/[:controller[/:action]]',
-'constraints' => array(
-'controller' =>'[a-zA-Z][a-zA-Z0-9_-]*',
-'action' =>'[a-zA-Z][a-zA-Z0-9_-]*',
-),
-'defaults' => array(
-),
-),
-),
-),
-),
-),
-),
-
-
-    'view_manager' => array(
-        'template_path_stack' => array(
-            'users' => __DIR__ . '/../view',
-        ),
-    ),
-);
+    public function getConfig()
+    {
+        return include __DIR__ . '/config/module.config.php';
+    }
+}
