@@ -13,13 +13,13 @@ return $view;
 public function registerAction()
 {
 $view = new ViewModel();
-$view->setTemplate('users/index/new-user');
+$view->setTemplate('see/users/index/new-user');
 return $view;
 }
 public function loginAction()
 {
 $view = new ViewModel();
-$view->setTemplate('users/index/login');
+$view->setTemplate('see/users/index/login');
 return $view;
 }
 }
