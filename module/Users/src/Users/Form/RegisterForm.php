@@ -8,8 +8,7 @@ public function __construct($name = null)
 {
 parent::__construct('Register');
 $this->setAttribute('method', 'post');
-$this->setAttribute('enctype','multipart/form-
-data');
+$this->setAttribute('enctype','multipart/form-data');
 
 
 $this->add(array(
