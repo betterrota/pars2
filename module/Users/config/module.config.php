@@ -27,10 +27,13 @@ return array(
 'type' => 'Segment',
 'options' => array('/[:controller[/:action]]',
 'constraints' => array(
-'controller' =>'[a-zA-Z][a-zA-Z0-9_-]*',
-'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+'controller' => 'Users\Controller\Index',
+                        'action'     => 'index',
+
 ),
-'defaults' => array(
+    'defaults' => array(
+  
+
 ),
 ),
 ),
