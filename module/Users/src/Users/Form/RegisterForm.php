@@ -61,7 +61,7 @@ $this->add(array(
 
 
 $this->add(array(
-'name' => 'password',
+'name' => 'confirm_password',
 'attributes' => array(
 'type' => 'password',
 ),
