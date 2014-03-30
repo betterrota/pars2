@@ -3,7 +3,7 @@ return array(
     'controllers' => array(
         'invokables' => array(
             'Auth\Controller\Auth' => 'Auth\Controller\AuthController',
-            'Users\Controller\Register' =>'Users\Controller\RegisterController',
+            'Auth\Controller\Register' =>'Auth\Controller\RegisterController',
 
         ),
     ),
