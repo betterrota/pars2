@@ -1,6 +1,6 @@
 <?php
 // filename : module/Users/src/User/Form/RegisterForm.php
-namespace Users\Form;
+namespace User\Form;
 use Zend\Form\Form;
 class RegisterForm extends Form
 {
