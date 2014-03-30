@@ -66,7 +66,7 @@ $this->add(array(
 'type' => 'password',
 ),
 'options' => array(
-'label' => 'confirm_password',
+'label' => 'confirm password',
 ),
 ));
 
