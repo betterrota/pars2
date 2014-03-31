@@ -8,7 +8,8 @@ class RegisterController extends AbstractActionController
 public function indexAction()
 {
 $form = new RegisterForm();
-$viewModel = new ViewModel(array('form' => $form));
+$viewModel = new ViewModel(array('form' =>
+$form));
 return $viewModel;
 }
 public function confirmAction()

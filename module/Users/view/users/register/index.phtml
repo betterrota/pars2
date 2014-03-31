@@ -15,6 +15,7 @@ array('controller'=>'Register', 'action' => 'process')));
 $form->setAttribute('method', 'post');
 echo $this->form()->openTag($form);
 ?>
+
 <dl class="zend_form">
 <dt><?php echo $this->formLabel($form->get('name')); ?></dt>
 <dd><?php
@@ -35,7 +36,7 @@ echo $this->formElementErrors($form->get('password'));
 <dt><?php echo $this->formLabel($form->get('confirm_password')); ?></dt>
 <dd><?php
 echo $this->formElement($form->get('confirm_password'));
-echo $this->formElementErrors($form->get('confirm_password'));
+echo $this->formElementErrors($form->get('confirm_password'));
 ?></dd>
 <dd><?php
 echo $this->formElement($form->get('submit'));
@@ -44,4 +45,6 @@ echo $this->formElementErrors($form->get('submit'));
 </dl>
 <?php echo $this->form()->closeTag() ?>
 </section>
+
+
 
