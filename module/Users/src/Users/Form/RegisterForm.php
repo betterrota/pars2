@@ -2,6 +2,7 @@
 // filename : module/Users/src/Users/Form/RegisterForm.php
 namespace Users\Form;
 use Zend\Form\Form;
+
 class RegisterForm extends Form
 {
 public function __construct($name = null)
@@ -51,24 +52,23 @@ $this->add(array(
 'type' => 'password',
 ),
 'options' => array(
-'label' => 'passowrd',
+'label' => 'password',
 ),
 ));
-
 
 
 
 
 
 $this->add(array(
-'name' => 'confirm_password',
-'attributes' => array(
-'type' => 'password',
-),
-'options' => array(
-'label' => 'confirm password',
-),
-));
+			'name' => 'confirm_password',
+			'attributes' => array(
+			'type' => 'password',
+			),
+			'options' => array(
+			'label' => 'confirm_password',
+			),
+			));
 
 $this->add(array(
 'name' => 'submit',
